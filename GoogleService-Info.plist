@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyB2P7C4jVEUFUkqKp6bqGd8K0tKEQgf0LY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>281471513568</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sham.ElectronIQ</string>
+	<key>PROJECT_ID</key>
+	<string>electroniq-a1ac8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>electroniq-a1ac8.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<true/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:281471513568:ios:91f268262da0646afcb185</string>
+</dict>
+</plist>

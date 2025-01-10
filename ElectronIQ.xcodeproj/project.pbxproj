@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECA9F3C82D02E3EB004FA1C5 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = ECA9F3C72D02E3EB004FA1C5 /* FirebaseAnalytics */; };
+		ECA9F3CA2D02E3F0004FA1C5 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = ECA9F3C92D02E3F0004FA1C5 /* FirebaseAnalyticsOnDeviceConversion */; };
+		ECA9F3CC2D02E3F6004FA1C5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = ECA9F3CB2D02E3F6004FA1C5 /* FirebaseAuth */; };
+		ECA9F3CE2D02E3FB004FA1C5 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = ECA9F3CD2D02E3FB004FA1C5 /* FirebaseAuthCombine-Community */; };
+		ECA9F3D02D02E3FE004FA1C5 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = ECA9F3CF2D02E3FE004FA1C5 /* FirebaseCore */; };
+		ECA9F3D22D02E403004FA1C5 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = ECA9F3D12D02E403004FA1C5 /* FirebaseAppCheck */; };
+		ECA9F3D42D02E4DE004FA1C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECA9F3D32D02E4DE004FA1C5 /* GoogleService-Info.plist */; };
+		ECD5FECF2D02EADC004F3BE1 /* ElectronIQApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD5FEB52D02EADC004F3BE1 /* ElectronIQApp.swift */; };
+		ECD5FEEF2D02FCDD004F3BE1 /* Pods_ElectronIQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD5FEEE2D02FCDD004F3BE1 /* Pods_ElectronIQ.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		40725E281AED16AFFE264F29 /* Pods-ElectronIQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectronIQ.debug.xcconfig"; path = "Target Support Files/Pods-ElectronIQ/Pods-ElectronIQ.debug.xcconfig"; sourceTree = "<group>"; };
+		9968BD3D106D307D43A8F856 /* Pods-ElectronIQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectronIQ.release.xcconfig"; path = "Target Support Files/Pods-ElectronIQ/Pods-ElectronIQ.release.xcconfig"; sourceTree = "<group>"; };
+		ECA9F3782D02E1B3004FA1C5 /* ElectronIQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElectronIQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA9F3D32D02E4DE004FA1C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ECD5FE8C2D02EA23004F3BE1 /* Google_Mobile_Ads_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Google_Mobile_Ads_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD5FEB52D02EADC004F3BE1 /* ElectronIQApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectronIQApp.swift; sourceTree = "<group>"; };
+		ECD5FEDD2D02FC69004F3BE1 /* Google_Mobile_Ads_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Google_Mobile_Ads_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD5FEE02D02FC6C004F3BE1 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = "Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework/GoogleMobileAds.xcframework"; sourceTree = "<group>"; };
+		ECD5FEE32D02FC72004F3BE1 /* GoogleMobileAdsResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = GoogleMobileAdsResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD5FEE62D02FC76004F3BE1 /* Pods_ElectronIQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ElectronIQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD5FEE92D02FC7A004F3BE1 /* UserMessagingPlatform.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = UserMessagingPlatform.xcframework; path = Pods/GoogleUserMessagingPlatform/Frameworks/Release/UserMessagingPlatform.xcframework; sourceTree = "<group>"; };
+		ECD5FEEC2D02FC7E004F3BE1 /* UserMessagingPlatformResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = UserMessagingPlatformResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD5FEEE2D02FCDD004F3BE1 /* Pods_ElectronIQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ElectronIQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2DCD5ADA3DE08520E1F6277 /* Pods_ElectronIQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElectronIQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		ECD5FEF22D02FD5F004F3BE1 /* Exceptions for "ElectronIQ" folder in "ElectronIQ" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = ECA9F3772D02E1B3004FA1C5 /* ElectronIQ */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		ECA9F37A2D02E1B3004FA1C5 /* ElectronIQ */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				ECD5FEF22D02FD5F004F3BE1 /* Exceptions for "ElectronIQ" folder in "ElectronIQ" target */,
+			);
+			path = ElectronIQ;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECA9F3752D02E1B3004FA1C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA9F3C82D02E3EB004FA1C5 /* FirebaseAnalytics in Frameworks */,
+				ECA9F3D02D02E3FE004FA1C5 /* FirebaseCore in Frameworks */,
+				ECA9F3CC2D02E3F6004FA1C5 /* FirebaseAuth in Frameworks */,
+				ECD5FEEF2D02FCDD004F3BE1 /* Pods_ElectronIQ.framework in Frameworks */,
+				ECA9F3CA2D02E3F0004FA1C5 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				ECA9F3D22D02E403004FA1C5 /* FirebaseAppCheck in Frameworks */,
+				ECA9F3CE2D02E3FB004FA1C5 /* FirebaseAuthCombine-Community in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AE86D75B11501AED91037DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40725E281AED16AFFE264F29 /* Pods-ElectronIQ.debug.xcconfig */,
+				9968BD3D106D307D43A8F856 /* Pods-ElectronIQ.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ECA9F36F2D02E1B3004FA1C5 = {
+			isa = PBXGroup;
+			children = (
+				ECA9F3D32D02E4DE004FA1C5 /* GoogleService-Info.plist */,
+				ECD5FEB52D02EADC004F3BE1 /* ElectronIQApp.swift */,
+				ECA9F37A2D02E1B3004FA1C5 /* ElectronIQ */,
+				ECA9F3C62D02E3EB004FA1C5 /* Frameworks */,
+				ECA9F3792D02E1B3004FA1C5 /* Products */,
+				9AE86D75B11501AED91037DD /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		ECA9F3792D02E1B3004FA1C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECA9F3782D02E1B3004FA1C5 /* ElectronIQ.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECA9F3C62D02E3EB004FA1C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECD5FEEE2D02FCDD004F3BE1 /* Pods_ElectronIQ.framework */,
+				ECD5FEEC2D02FC7E004F3BE1 /* UserMessagingPlatformResources.bundle */,
+				ECD5FEE92D02FC7A004F3BE1 /* UserMessagingPlatform.xcframework */,
+				ECD5FEE62D02FC76004F3BE1 /* Pods_ElectronIQ.framework */,
+				ECD5FEE32D02FC72004F3BE1 /* GoogleMobileAdsResources.bundle */,
+				ECD5FEE02D02FC6C004F3BE1 /* GoogleMobileAds.xcframework */,
+				ECD5FEDD2D02FC69004F3BE1 /* Google_Mobile_Ads_SDK.framework */,
+				ECD5FE8C2D02EA23004F3BE1 /* Google_Mobile_Ads_SDK.framework */,
+				F2DCD5ADA3DE08520E1F6277 /* Pods_ElectronIQ.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECA9F3772D02E1B3004FA1C5 /* ElectronIQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA9F3862D02E1B5004FA1C5 /* Build configuration list for PBXNativeTarget "ElectronIQ" */;
+			buildPhases = (
+				7142D9498405764D8D4BA742 /* [CP] Check Pods Manifest.lock */,
+				ECA9F3742D02E1B3004FA1C5 /* Sources */,
+				ECA9F3752D02E1B3004FA1C5 /* Frameworks */,
+				ECA9F3762D02E1B3004FA1C5 /* Resources */,
+				6DA2D58B280F941AFAF71925 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				ECA9F37A2D02E1B3004FA1C5 /* ElectronIQ */,
+			);
+			name = ElectronIQ;
+			packageProductDependencies = (
+				ECA9F3C72D02E3EB004FA1C5 /* FirebaseAnalytics */,
+				ECA9F3C92D02E3F0004FA1C5 /* FirebaseAnalyticsOnDeviceConversion */,
+				ECA9F3CB2D02E3F6004FA1C5 /* FirebaseAuth */,
+				ECA9F3CD2D02E3FB004FA1C5 /* FirebaseAuthCombine-Community */,
+				ECA9F3CF2D02E3FE004FA1C5 /* FirebaseCore */,
+				ECA9F3D12D02E403004FA1C5 /* FirebaseAppCheck */,
+			);
+			productName = ElectronIQ;
+			productReference = ECA9F3782D02E1B3004FA1C5 /* ElectronIQ.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECA9F3702D02E1B3004FA1C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					ECA9F3772D02E1B3004FA1C5 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+				};
+			};
+			buildConfigurationList = ECA9F3732D02E1B3004FA1C5 /* Build configuration list for PBXProject "ElectronIQ" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECA9F36F2D02E1B3004FA1C5;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				ECA9F38B2D02E284004FA1C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = ECA9F3792D02E1B3004FA1C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECA9F3772D02E1B3004FA1C5 /* ElectronIQ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECA9F3762D02E1B3004FA1C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA9F3D42D02E4DE004FA1C5 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DA2D58B280F941AFAF71925 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElectronIQ/Pods-ElectronIQ-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElectronIQ/Pods-ElectronIQ-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElectronIQ/Pods-ElectronIQ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7142D9498405764D8D4BA742 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElectronIQ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECA9F3742D02E1B3004FA1C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD5FECF2D02EADC004F3BE1 /* ElectronIQApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ECA9F3842D02E1B5004FA1C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECA9F3852D02E1B5004FA1C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECA9F3872D02E1B5004FA1C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40725E281AED16AFFE264F29 /* Pods-ElectronIQ.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = R5CK34T8TP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ElectronIQ/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Electron IQ";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sham.ElectronIQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECA9F3882D02E1B5004FA1C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9968BD3D106D307D43A8F856 /* Pods-ElectronIQ.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = R5CK34T8TP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ElectronIQ/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Electron IQ";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sham.ElectronIQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECA9F3732D02E1B3004FA1C5 /* Build configuration list for PBXProject "ElectronIQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA9F3842D02E1B5004FA1C5 /* Debug */,
+				ECA9F3852D02E1B5004FA1C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECA9F3862D02E1B5004FA1C5 /* Build configuration list for PBXNativeTarget "ElectronIQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA9F3872D02E1B5004FA1C5 /* Debug */,
+				ECA9F3882D02E1B5004FA1C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ECA9F38B2D02E284004FA1C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ECA9F3C72D02E3EB004FA1C5 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECA9F38B2D02E284004FA1C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		ECA9F3C92D02E3F0004FA1C5 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECA9F38B2D02E284004FA1C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		ECA9F3CB2D02E3F6004FA1C5 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECA9F38B2D02E284004FA1C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		ECA9F3CD2D02E3FB004FA1C5 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECA9F38B2D02E284004FA1C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		ECA9F3CF2D02E3FE004FA1C5 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECA9F38B2D02E284004FA1C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		ECA9F3D12D02E403004FA1C5 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECA9F38B2D02E284004FA1C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = ECA9F3702D02E1B3004FA1C5 /* Project object */;
+}
