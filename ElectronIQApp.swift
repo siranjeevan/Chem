@@ -13,7 +13,7 @@ struct ElectronIQApp: App {
     init(){
         FirebaseApp.configure()
         print("Initializing Google Mobile Ads...")
-                GADMobileAds.sharedInstance().start { status in
+        MobileAds.shared.start { status in
                     print("Google Mobile Ads initialization completed with status: \(status.adapterStatusesByClassName)")
                 }
         print("successfully Configured")
@@ -27,7 +27,7 @@ struct ElectronIQApp: App {
 }
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        GADMobileAds.sharedInstance().start(completionHandler: nil)
+        MobileAds.shared.start(completionHandler: nil)
         return true
     }
 }

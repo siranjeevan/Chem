@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		743ADC672DF04A09007EC141 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 743ADC662DF04A09007EC141 /* GoogleMobileAds */; };
 		ECA9F3C82D02E3EB004FA1C5 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = ECA9F3C72D02E3EB004FA1C5 /* FirebaseAnalytics */; };
 		ECA9F3CA2D02E3F0004FA1C5 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = ECA9F3C92D02E3F0004FA1C5 /* FirebaseAnalyticsOnDeviceConversion */; };
 		ECA9F3CC2D02E3F6004FA1C5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = ECA9F3CB2D02E3F6004FA1C5 /* FirebaseAuth */; };
@@ -65,6 +66,7 @@
 				ECA9F3D02D02E3FE004FA1C5 /* FirebaseCore in Frameworks */,
 				ECA9F3CC2D02E3F6004FA1C5 /* FirebaseAuth in Frameworks */,
 				ECD5FEEF2D02FCDD004F3BE1 /* Pods_ElectronIQ.framework in Frameworks */,
+				743ADC672DF04A09007EC141 /* GoogleMobileAds in Frameworks */,
 				ECA9F3CA2D02E3F0004FA1C5 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				ECA9F3D22D02E403004FA1C5 /* FirebaseAppCheck in Frameworks */,
 				ECA9F3CE2D02E3FB004FA1C5 /* FirebaseAuthCombine-Community in Frameworks */,
@@ -147,6 +149,7 @@
 				ECA9F3CD2D02E3FB004FA1C5 /* FirebaseAuthCombine-Community */,
 				ECA9F3CF2D02E3FE004FA1C5 /* FirebaseCore */,
 				ECA9F3D12D02E403004FA1C5 /* FirebaseAppCheck */,
+				743ADC662DF04A09007EC141 /* GoogleMobileAds */,
 			);
 			productName = ElectronIQ;
 			productReference = ECA9F3782D02E1B3004FA1C5 /* ElectronIQ.app */;
@@ -178,6 +181,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				ECA9F38B2D02E284004FA1C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				743ADC652DF04A09007EC141 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = ECA9F3792D02E1B3004FA1C5 /* Products */;
@@ -467,6 +471,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		743ADC652DF04A09007EC141 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.5.0;
+			};
+		};
 		ECA9F38B2D02E284004FA1C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -478,6 +490,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		743ADC662DF04A09007EC141 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 743ADC652DF04A09007EC141 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
 		ECA9F3C72D02E3EB004FA1C5 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = ECA9F38B2D02E284004FA1C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

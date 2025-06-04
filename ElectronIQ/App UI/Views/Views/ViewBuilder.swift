@@ -13,7 +13,7 @@ import GoogleMobileAds
 struct Onboarding: View {
     @StateObject private var viewModel = VersionViewModel()
     @StateObject private var networkMonitor = NetworkMonitor()
-    @StateObject private var interstitialAd = InterstitialAd()
+    @StateObject private var interstitialAd = MyInterstitialAd()
     @State private var hasAttemptedToShowAd = false
     @Environment(\.colorScheme) var colorScheme
     var body: some View {
@@ -34,18 +34,26 @@ struct Onboarding: View {
                         }.padding()
                     }
                     
-                } else if let versionInfo = viewModel.versionInfo {
-                    if versionInfo.version == "1.0.0" {
+                }
+                else if let versionInfo = viewModel.versionInfo
+                {
+                    if versionInfo.version == "1.0.0"
+                    {
                         PeriodicTableView()
                     } else {
                         UpdateView()
                     }
-                } else {
-                    Text("Failed to fetch version info.")
-                        .foregroundColor(.red)
-                        .font(.subheadline)
                 }
-            } else {
+                else
+                {
+                    PeriodicTableView()
+//                    Text("Failed to fetch version info.")
+//                        .foregroundColor(.red)
+//                        .font(.subheadline)
+                }
+            }
+            else
+            {
                 noNetwork_View()
             }
         }

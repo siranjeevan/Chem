@@ -1,35 +1,29 @@
-//
-//  adsCollections.swift
-//  ElectronIQ
-//
-//  Created by shamtech07 on 06/12/24.
-//
-
 import Foundation
 import GoogleMobileAds
 import SwiftUI
-//banner ads
+
+// Banner Ad View
 struct AdBannerView: UIViewRepresentable {
     
-    func makeUIView(context: Context) -> GADBannerView {
-        let bannerView = GADBannerView(adSize: GADAdSizeFromCGSize(CGSize(width: 320, height: 50))) // Set your desired banner ad size
+    func makeUIView(context: Context) -> BannerView {
+        let bannerView = BannerView(adSize: AdSizeBanner) // Or use adSizeFor(cgSize: CGSize(width: 320, height: 50)) if defined
         bannerView.adUnitID = "ca-app-pub-7374460951052927/8744038682"
         
-        // Get the root view controller from the current window scene
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
             bannerView.rootViewController = windowScene.windows.first?.rootViewController
         }
         
-        bannerView.load(GADRequest())
+        bannerView.load(Request())
         return bannerView
     }
     
-    func updateUIView(_ uiView: GADBannerView, context: Context) {}
+    func updateUIView(_ uiView: BannerView, context: Context) {}
 }
-//interstistial ads
-class InterstitialAd: NSObject, ObservableObject, GADFullScreenContentDelegate {
+
+// Interstitial Ad Manager
+class MyInterstitialAd: NSObject, ObservableObject, FullScreenContentDelegate {
     @Published var isAdReady = false
-    private var interstitialAd: GADInterstitialAd?
+    private var interstitialAd: InterstitialAd?
     
     override init() {
         super.init()
@@ -38,9 +32,8 @@ class InterstitialAd: NSObject, ObservableObject, GADFullScreenContentDelegate {
     
     func loadAd() {
         print("Loading interstitial ad...")
-        let request = GADRequest()
-        // Replace this test ad unit ID with your own
-        GADInterstitialAd.load(withAdUnitID: "ca-app-pub-3940256099942544/4411468910", request: request) { [weak self] ad, error in
+        let request = Request()
+        InterstitialAd.load(with: "ca-app-pub-3940256099942544/4411468910", request: request) { [weak self] ad, error in
             guard let self = self else { return }
             if let error = error {
                 print("Failed to load interstitial ad with error: \(error.localizedDescription)")
@@ -57,20 +50,22 @@ class InterstitialAd: NSObject, ObservableObject, GADFullScreenContentDelegate {
     func presentAd(from rootViewController: UIViewController) {
         if let ad = interstitialAd {
             print("Attempting to present interstitial ad...")
-            ad.present(fromRootViewController: rootViewController)
+            ad.present(from: rootViewController)
         } else {
             print("Interstitial ad not ready, loading a new ad...")
             loadAd()
         }
     }
     
-    func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+    // MARK: GADFullScreenContentDelegate Methods
+    
+    func adDidDismissFullScreenContent(_ ad: FullScreenPresentingAd) {
         print("Interstitial ad dismissed")
         isAdReady = false
         loadAd()
     }
     
-    func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
+    func ad(_ ad: FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
         print("Interstitial ad failed to present with error: \(error.localizedDescription)")
         isAdReady = false
         loadAd()
