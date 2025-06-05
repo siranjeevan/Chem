@@ -16,7 +16,7 @@ struct PeriodicTableView: View {
             ZStack{
                 ZStack{
                     AppBackground()
-                    viewBackgroundColor(selectedElement: 102)
+//                    viewBackgroundColor(selectedElement: 102)
                     Header(content: "", selectedElement: 0)
                     VStack(spacing:5){
                         //row 1
@@ -27,14 +27,18 @@ struct PeriodicTableView: View {
                                 elementCard(index: 0)
                             })
                             
+                            // elements space for HStack
                             ForEach(0..<16){_ in
                                 transparentElementCard()
                             }
+                            
+                            
                             NavigationLink(destination:{
                                 DetailView(selectedElement: 1)
                             }, label: {
                                 elementCard(index: 1)
                             })
+                            
                         }
                         //row 2
                         HStack(spacing:5){
@@ -49,6 +53,7 @@ struct PeriodicTableView: View {
                             ForEach(0..<10){_ in
                                 transparentElementCard()
                             }
+                            
                             ForEach(4..<10){i in
                                 NavigationLink(destination: {
                                     DetailView(selectedElement: i)
@@ -177,10 +182,10 @@ struct PeriodicTableView: View {
             }
         }
         .onAppear {
-            print("\(elementCardColor.count)")
+//            print("\(elementCardColor.count)")
             viewModel.fetchVersion()  // Fetch version when the view appears
             Analytics.logEvent("Main_View", parameters: ["Periodic_Table":"PeriodicTableView"])
-            print("periodic_Table_view_appeared")
+//            print("periodic_Table_view_appeared")
         }
         .navigationBarBackButtonHidden(true)
     }

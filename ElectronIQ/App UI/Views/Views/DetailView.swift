@@ -40,8 +40,6 @@ struct DetailView: View {
                             applicationOfAtom(selectElement: selectedElement)
                         }
                     
-                    
-                    
                         renderValanceElectron(selectedElement: selectedElement)
                     
                 }
@@ -80,41 +78,4 @@ struct DetailView: View {
 #Preview {
     DetailView(selectedElement: 102)
 }
-@ViewBuilder
-func applicationOfAtom(selectElement:Int)->some View{
-    ZStack{
-        RoundedRectangle(cornerRadius: 10)
-            .fill(elementCardColor[selectElement])
-            .frame(width: screenWidth * 0.3,height: screenWidth * 0.2)
-        
-       
-    }
-    .overlay(alignment:.top){
-        Text("Applications of \(elementsNames[selectElement])")
-            .font(.custom(atomSymbolFont, size: 16))
-            .padding(.all,5)
-    }
-    .overlay(alignment:.center){
-        HStack{
-            VStack(alignment:.leading){
-                Text("1) \(elementUses[selectElement][0])")
-                Text("2) \(elementUses[selectElement][1])")
-                Text("3) \(elementUses[selectElement][2])")
-             }
-            .font(.custom(atomSymbolFont, size: 14))
-            Image("\(elementsSymbols[selectElement])_Rimg")
-                   .resizable()
-                   
-                   .frame(width:isIPhone ? screenWidth*0.1:screenWidth*0.12,height: isIPhone ? screenWidth*0.1:screenWidth*0.12)
-                   .cornerRadius(5)
-                   .padding()
-                   .onAppear{
-                       print("\(elementsSymbols[selectElement])_Rimg")
-                   }
-        }
-        .padding()
-        
-                   
-    }
-    .foregroundColor(contentFontColor)
-}
+

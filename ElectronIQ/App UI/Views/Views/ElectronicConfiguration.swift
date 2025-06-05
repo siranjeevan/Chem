@@ -18,7 +18,6 @@ struct ElectronicConfiguration: View {
             ZStack {
                 // Backgrounds and atomic structure rendering
                 AppBackground()
-                viewBackgroundColor(selectedElement: selectedElement)
                 Group{
                     HStack(spacing:50){
                         VStack(spacing:-20){
