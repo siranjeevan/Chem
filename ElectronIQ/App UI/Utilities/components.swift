@@ -864,8 +864,17 @@ struct BouncingBackButton: View {
 
 
 
-struct PreviewTester:PreviewProvider{
-    static var previews: some View{
-        DetailView(selectedElement: 102)
+struct Test : View {
+    var body : some View {
+        Text("Hello World")
     }
 }
+
+#Preview {
+    Test()
+}
+//struct PreviewTester:PreviewProvider{
+//    static var previews: some View{
+//        DetailView(selectedElement: 102)
+//    }
+//}

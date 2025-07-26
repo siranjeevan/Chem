@@ -55,7 +55,6 @@ struct AufbaPrinciple: View {
         }
     }
     func animateElementCard() {
-        
         let filledSubShells: [Int] = [2,6,10,14]
         for (index, i) in APR.enumerated() {
             DispatchQueue.main.asyncAfter(deadline: .now() + Double(index) * 1) { // Delays each animation based on its sequence
@@ -213,6 +212,7 @@ struct AufbaIntegerationView:View{
                         .bold()
                         .foregroundStyle(contentFontColor)
                         .padding()
+                        .offset(y : -5)
                 }// Add text overlay with dynamic element name
                 .cornerRadius(20)
                 .shadow(color: .black.opacity(0.2), radius: 10, x: 5, y: 5) // Subtle shadow for depth
